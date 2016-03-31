@@ -25,13 +25,13 @@
 <?php
 if (isset($_GET['view']) && $_GET['view'] == 'details' and !$is_read_only_keyspace):
 ?>
-
+<!--
 	<a href="columnfamily_action.php?action=edit&amp;keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Edit Column Family</a>
 
 	<a href="#" onclick="return truncateColumnFamily('<?php echo $keyspace_name; ?>','<?php echo $columnfamily_name; ?>');" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Truncate Column Family</a>
 	
 	<a href="#" onclick="return dropColumnFamily('<?php echo $keyspace_name; ?>','<?php echo $columnfamily_name; ?>');" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Drop Column Family</a>
-
+-->
 <h3>Column Family Details</h3>
 <?php echo $columnfamily_def; ?>
 
@@ -48,11 +48,11 @@ else:
 <?php endif; ?>
 
 <?php if (!$is_read_only_keyspace && !$is_counter_column): ?>
-	<a href="columnfamily_action.php?action=insert_row&amp;keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Insert Row</a>
+<!--	<a href="columnfamily_action.php?action=insert_row&amp;keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Insert Row</a> -->
 <?php endif; ?>
 
 <?php if (!$is_read_only_keyspace): ?>
-	<a href="columnfamily_action.php?action=create_secondary_index&amp;keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Create Secondary Index</a>
+<!--	<a href="columnfamily_action.php?action=create_secondary_index&amp;keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Create Secondary Index</a> -->
 <?php endif; ?>
 
 <?php if (count($secondary_indexes) > 0): ?>

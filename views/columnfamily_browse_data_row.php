@@ -24,6 +24,7 @@
 			}
 		?>
 	</td>
+        <!--
 	<?php if ($show_actions_link): ?>
 	<td>
 		<?php if (!$is_counter_column):?>
@@ -38,4 +39,5 @@
 		</div>
 	</td>
 	<?php endif; ?>
+        -->
 </tr>

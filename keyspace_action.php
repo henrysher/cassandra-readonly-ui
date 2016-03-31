@@ -20,7 +20,7 @@
 	/*
 		Create a column family
 	*/	
-	if (isset($_POST['btn_create_columnfamily'])) {	
+	if (isset($_POST['btn_create_columnfamily']) && !READ_ONLY_OPS) {
 		$keyspace_name = '';
 		if (isset($_GET['keyspace_name'])) {
 			$keyspace_name = $_GET['keyspace_name'];
@@ -140,7 +140,7 @@
 		Create a column family
 	*/
 	
-	if ($action == 'create_cf') {
+	if ($action == 'create_cf' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -208,7 +208,7 @@
 		Submit form create a keyspace
 	*/
 	
-	if (isset($_POST['btn_create_keyspace'])) {
+	if (isset($_POST['btn_create_keyspace']) && !READ_ONLY_OPS) {
 		$keyspace_name = $_POST['keyspace_name'];
 		$replication_factor = $_POST['replication_factor'];
 		$strategy = $_POST['strategy'];
@@ -230,7 +230,7 @@
 		Create a keyspace
 	*/
 	
-	if ($action == 'create') {
+	if ($action == 'create' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$vw_vars['cluster_name'] = $sys_manager->describe_cluster_name();
@@ -255,7 +255,7 @@
 		Submit form edit a keyspace
 	*/
 	
-	if (isset($_POST['btn_edit_keyspace'])) {
+	if (isset($_POST['btn_edit_keyspace']) && !READ_ONLY_OPS) {
 		$keyspace_name = $_POST['keyspace_name'];
 		$replication_factor = $_POST['replication_factor'];
 		$strategy = $_POST['strategy'];
@@ -297,7 +297,7 @@
 		Edit a keyspace
 	*/
 	
-	if ($action == 'edit') {
+	if ($action == 'edit' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -356,7 +356,7 @@
 		Drop a keyspace
 	*/
 	
-	if ($action == 'drop') {
+	if ($action == 'drop' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';

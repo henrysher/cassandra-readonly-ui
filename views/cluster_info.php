@@ -52,7 +52,7 @@ else:
 <ul id="keyspaces" class="well"><li>
 	<h3>Keyspaces and Column Families</h3>
 
-	<a href="keyspace_action.php?action=create" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Create New Keyspace</a>
+	<!-- <a href="keyspace_action.php?action=create" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Create New Keyspace</a> -->
 
 	<br /><br />
 

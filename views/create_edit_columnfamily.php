@@ -8,7 +8,7 @@
 	<?php if (!empty($columnfamily_name)): echo '<li><a href="describe_columnfamily.php?keyspace_name='.$keyspace_name.'&columnfamily_name='.$columnfamily_name.'">'.$columnfamily_name.'</a> <span class="divider">/</span></li>'; endif; ?>
 	
 	<li class="active">
-		<?php if ($mode=='create'): echo 'Create Column Family'; else: echo 'Edit Column Family'; endif;?>
+		<!-- <?php if ($mode=='create'): echo 'Create Column Family'; else: echo 'Edit Column Family'; endif;?> -->
 	</li>
 </ul>
 

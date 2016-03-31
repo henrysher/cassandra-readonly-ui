@@ -27,8 +27,10 @@ if (isset($_GET['view']) && $_GET['view'] == 'details'):
 ?>
 
 <?php if (!$is_read_only_keyspace): ?>
+        <!--
 	<a href="keyspace_action.php?action=edit&amp;keyspace_name=<?php echo $keyspace_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Edit Keyspace</a>
 	<a href="#" onclick="return dropKeyspace('<?php echo $keyspace_name; ?>');" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Drop Keyspace</a>
+        -->
 <?php endif; ?>
 
 <h3>Keyspace Details</h3>
@@ -80,7 +82,7 @@ else:
 ?>
 
 <?php if (!$is_read_only_keyspace): ?>
-	<a href="keyspace_action.php?action=create_cf&amp;keyspace_name=<?php echo $keyspace_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Create New Column Family</a>
+<!--	<a href="keyspace_action.php?action=create_cf&amp;keyspace_name=<?php echo $keyspace_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Create New Column Family</a> -->
 <?php endif; ?>
 
 <h3>Column Families in Keyspace <?php echo $keyspace_name; ?></h3>

@@ -27,9 +27,12 @@
 		Read-only keyspace
 		
 		Some keyspace can be set to read-only so nothing can be added/edited/deleted from them.
+
+        Take "Profiles" as an keyspace name in this case.
 	*/
 	
-	define('READ_ONLY_KEYSPACES','system'); // Seperate by comma (,)
+	define('READ_ONLY_KEYSPACES','system.Profiles'); // Seperate by comma (,)
+    define('READ_ONLY_OPS', true);
 	
 	/*
 		Enter your Cassandra Cluster Admin credentials here

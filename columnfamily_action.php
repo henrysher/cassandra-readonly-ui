@@ -24,7 +24,7 @@
 		Submit form edit column family
 	*/
 	
-	if (isset($_POST['btn_edit_columnfamily'])) {
+	if (isset($_POST['btn_edit_columnfamily']) && !READ_ONLY_OPS) {
 		$column_type = $_POST['column_type'];
 		
 		$comment = $_POST['comment'];
@@ -103,7 +103,7 @@
 		Edit a column family
 	*/
 	
-	if ($action == 'edit') {	
+	if ($action == 'edit' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -183,7 +183,7 @@
 		Drop a column family
 	*/	
 	
-	if ($action == 'drop') {
+	if ($action == 'drop' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -213,7 +213,7 @@
 		Submit form create a secondary index
 	*/
 	
-	if (isset($_POST['btn_create_secondary_index'])) {
+	if (isset($_POST['btn_create_secondary_index']) && !READ_ONLY_OPS) {
 		$keyspace_name = '';
 		if (isset($_GET['keyspace_name'])) {
 			$keyspace_name = $_GET['keyspace_name'];
@@ -244,7 +244,7 @@
 		Create a secondary index
 	*/
 	
-	if ($action == 'create_secondary_index') {
+	if ($action == 'create_secondary_index' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -511,7 +511,7 @@
 		Submit form insert/edit a row
 	*/
 	
-	if (isset($_POST['btn_insert_row'])) {
+	if (isset($_POST['btn_insert_row']) && !READ_ONLY_OPS) {
 		$keyspace_name = '';
 		if (isset($_GET['keyspace_name'])) {
 			$keyspace_name = $_GET['keyspace_name'];
@@ -621,7 +621,7 @@
 		Insert a row
 	*/
 	
-	if ($action == 'insert_row') {
+	if ($action == 'insert_row' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -660,7 +660,7 @@
 		Truncate column family
 	*/
 	
-	if ($action == 'truncate') {
+	if ($action == 'truncate' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -848,7 +848,7 @@
 	/*
 		Edit a row
 	*/
-	if ($action == 'edit_row') {
+	if ($action == 'edit_row' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -919,7 +919,7 @@
 	/*
 		Delete a row
 	*/
-	if ($action == 'delete_row') {
+	if ($action == 'delete_row' && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 	
 		$keyspace_name = '';
@@ -974,7 +974,7 @@
 	/*
 		Modify counter
 	*/
-	if (isset($_POST['btn_modify_counter'])) {
+	if (isset($_POST['btn_modify_counter']) && !READ_ONLY_OPS) {
 		$is_valid_action = true;
 		
 		$key = '';

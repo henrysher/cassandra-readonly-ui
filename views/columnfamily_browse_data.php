@@ -14,7 +14,7 @@
 </ul>
 
 <?php if (!$is_counter_column): ?>
-	<a href="columnfamily_action.php?action=insert_row&amp;keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Insert Row</a>
+<!--	<a href="columnfamily_action.php?action=insert_row&amp;keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>" class="btn btn-large btn-primary" style="color: #fff; text-decoration: none;">Insert Row</a> -->
 <?php endif; ?>
 
 <div style="width: 500px;">

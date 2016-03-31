@@ -4,11 +4,13 @@
 			<td colspan="2">
 				<div class="float_left"><?php echo htmlentities($scf_key,ENT_COMPAT,'UTF-8'); ?></div>
 				<div class="float_right" style="margin-left: 20px;">
+                                        <!--
 					<div class="delete_row_icon"></div>
 					<div class="float_left">
 						<a href="#" onclick="deleteSuperColumn('<?php echo $keyspace_name; ?>','<?php echo $columnfamily_name; ?>','<?php echo escapeNameForJs($row_key); ?>','<?php echo escapeNameForJs($scf_key);?>')">Delete</a>
 					</div>
 					<div class="clear_both"></div>
+                                        -->
 				</div>
 			</td>
 		</tr>

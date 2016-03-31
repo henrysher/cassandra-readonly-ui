@@ -8,9 +8,9 @@
 	<li>
 		<a href="describe_columnfamily.php?keyspace_name=<?php echo $keyspace_name; ?>&amp;columnfamily_name=<?php echo $columnfamily_name; ?>"><?php echo $columnfamily_name; ?></a> <span class="divider">/</span>
 	</li>
-	<li class="active">
+	<!-- <li class="active">
 		Create Secondary Index
-	</li>
+	</li> -->
 </ul>
 
 
